@@ -1,6 +1,5 @@
 Google-Photos: 7.67.0.882706237  
 ProtonMail: 4.15.0  
-Instagram: 420.0.0.55.74  
 Letterboxd: 3.4.1  
 Twitter: 11.73.0-release.0  
 YouTube: 20.44.38  
@@ -12,7 +11,7 @@ CLI: MorpheApp/morphe-cli-1.5.1-dev.2-all.jar
 Patches: crimera/patches-3.0.0-dev.11.mpp  
 [Changelog](https://github.com/crimera/piko/releases/tag/v3.0.0-dev.11)
 
-CLI: MorpheApp/morphe-cli-1.5.1-dev.2-all.jar  
+CLI: MorpheApp/morphe-cli-1.5.1-dev.3-all.jar  
 Patches: MorpheApp/patches-1.19.0-dev.3.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.19.0-dev.3)
 
