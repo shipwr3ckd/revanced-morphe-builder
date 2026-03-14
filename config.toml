@@ -1,12 +1,14 @@
 enable-module-update = false
 dpi = "nodpi 120-640dpi"
 patches-version = "dev"
+cli-version = "dev"
 
 # ReVanced
 
 [Instagram]
 app-name = "Instagram"
 patches-source = "revanced/revanced-patches"
+cli-source = "revanced/revanced-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android/"
 build-mode = "apk"
@@ -18,6 +20,7 @@ patcher-args = "-e 'Change package name' -OpackageName=com.revanced.instagram.an
 [Letterboxd]
 app-name = "Letterboxd"
 patches-source = "revanced/revanced-patches"
+cli-source = "revanced/revanced-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
 uptodown-dlurl = "https://letterboxd.en.uptodown.com/android/"
 build-mode = "apk"
@@ -29,6 +32,7 @@ patcher-args = "-e 'Change version code' -OversionCode=2147483647"
 [Google-Photos]
 app-name = "Google Photos"
 patches-source = "revanced/revanced-patches"
+cli-source = "revanced/revanced-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android/"
 build-mode = "apk"
@@ -40,6 +44,7 @@ patcher-args = "-e 'Change package name' -OpackageName=com.google.android.apps.p
 [ProtonMail]
 app-name = "Proton Mail"
 patches-source = "revanced/revanced-patches"
+cli-source = "revanced/revanced-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
 uptodown-dlurl = "https://protonmail.en.uptodown.com/android/"
 build-mode = "apk"
