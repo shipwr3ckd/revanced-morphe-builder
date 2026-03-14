@@ -1,63 +1,77 @@
-enable-module-update = true
+enable-module-update = false
+dpi = "nodpi 120-640dpi"
+patches-version = "dev"
 
 # ReVanced
-[YouTube]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "both"
-patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
 
-[YT-Music]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+[Instagram]
+app-name = "Instagram"
+patches-source = "revanced/revanced-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+build-mode = "apk"
+version = "beta"
 arch = "arm64-v8a"
-build-mode = "both"
+included-patches = "'Disable Sentry telemetry' 'Disable analytics' 'Enable developer menu' 'Hide ads' 'Open links externally' 'Prevent screenshot detection' 'Remove build expired popup' 'Remove screen capture restriction' 'Remove screenshot restriction' 'Sanitize sharing links'"
+patcher-args = "-e 'Change package name' -OpackageName=com.revanced.instagram.android -e 'Change version code' -OversionCode=2147483647 -e 'Change link sharing domain' -OdomainName=kkinstagram.com"
 
-# ReVanced Extended by anddea
-[YouTube-anddea]
-app-name = "YouTube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced anddea"
-build-mode = "both"
-excluded-patches = "'Custom Shorts action buttons' 'Force player buttons background'"
-patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
-
-[YT-Music-anddea]
-app-name = "YT Music"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced anddea"
+[Letterboxd]
+app-name = "Letterboxd"
+patches-source = "revanced/revanced-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd"
+uptodown-dlurl = "https://letterboxd.en.uptodown.com/android"
+build-mode = "apk"
+version = "auto"
 arch = "arm64-v8a"
-build-mode = "both"
-included-patches = "'Disable music video in album' 'Hide player overlay filter'"
-patcher-args = "-e 'Dark theme' -OdarkThemeBackgroundColor=@android:color/black"
+included-patches = "'Disable Sentry telemetry' 'Hide ads' 'Unlock app icons'"
+patcher-args = "-e 'Change version code' -OversionCode=2147483647"
+
+[Google-Photos]
+app-name = "Google Photos"
+patches-source = "revanced/revanced-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+build-mode = "apk"
+version = "latest"
+arch = "arm64-v8a"
+included-patches = "'Disable Sentry telemetry' 'Enable DCIM folders backup control' 'GmsCore support' 'Spoof features'"
+patcher-args = "-e 'Change package name' -OpackageName=com.google.android.apps.photos.revanced -e 'Change version code' -OversionCode=2147483647"
+
+[ProtonMail]
+app-name = "Proton Mail"
+patches-source = "revanced/revanced-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
+uptodown-dlurl = "https://protonmail.en.uptodown.com/android"
+build-mode = "apk"
+version = "auto"
+arch = "arm64-v8a"
+included-patches = "'Remove \"Sent from\" signature' 'Remove free accounts limit'"
+patcher-args = "-e 'Change package name' -OpackageName=ch.revanced.protonmail.android -e 'Change version code' -OversionCode=2147483647"
+
+# Piko
+
+[Twitter]
+app-name = "X"
+patches-source = "crimera/piko"
+cli-source = "MorpheApp/morphe-cli"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+build-mode = "apk"
+version = "latest"
+arch = "arm64-v8a"
+included-patches = "'Add ability to copy media link' 'Clear tracking params' 'Control video auto scroll' 'Custom download folder' 'Custom emoji font' 'Custom font' 'Custom sharing domain' 'Custom translator' 'Customise post font size' 'Customize Inline action Bar items' 'Customize Navigation Bar items' 'Customize default reply sorting' 'Customize explore tabs' 'Customize notification tabs' 'Customize profile tabs' 'Customize search suggestions' 'Customize search tab items' 'Customize side bar items' 'Customize timeline top bar' 'Disable auto timeline scroll on launch' 'Disable chirp font' 'Disunify xchat system' 'Download patch' 'Dynamic color' 'Enable Undo Posts' 'Enable force HD videos' 'Force enable translate' 'Handle custom twitter links' 'Hide Banner' 'Hide FAB' 'Hide FAB Menu Buttons' 'Hide Live Threads' 'Hide Recommended Users' 'Hide badges from navigation bar icons' 'Hide bookmark icon in timeline' 'Hide hidden replies' 'Hide immersive player' 'Hide nudge button' 'Hide promote button' 'Hide timeline posts by category' 'Hook feature flag' 'Native reader mode' 'No shortened URL' 'Remove Ads' 'Remove premium upsell' 'Remove view count' 'Round off numbers' 'Selectable Text' 'Share Tweet as Image' 'Show poll results' 'Show post source label'"
+patcher-args = "-e 'Change app icon' -OappIcon=original -e 'Change version code' -OversionCode=2147483647"
 
 # Morphe
-[YouTube-Morphe]
+
+[YouTube]
 app-name = "YouTube"
-direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.apps.youtube.music-8.44.54-arm64-v8a.apk"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "both"
-
-[YT-Music-Morphe]
-app-name = "YT Music"
-direct-dlurl = "https://github.com/peternmuller/YTYTM-APK/releases/download/1/com.google.android.apps.youtube.music-8.44.54-arm64-v8a.apk"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
+build-mode = "apk"
+version = "auto"
 arch = "arm64-v8a"
-build-mode = "both"
+included-patches = "'Alternative thumbnails' 'Ambient mode' 'Bypass URL redirects' 'Bypass image region restrictions' 'Captions' 'Change start page' 'Check watch history domain name resolution' 'Copy video URL' 'Custom player overlay opacity' 'Disable DRC audio' 'Disable QUIC protocol' 'Disable double tap actions' 'Disable haptic feedback' 'Disable layout updates' 'Disable player popup panels' 'Disable resuming Shorts on startup' 'Disable sign in to TV popup' 'Disable video codecs' 'Double tap to seek' 'Downloads' 'Enable debugging' 'Exit fullscreen mode' 'Force original audio' 'GmsCore support' 'Hide Shorts components' 'Hide ads' 'Hide autoplay preview' 'Hide end screen cards' 'Hide end screen suggested video' 'Hide info cards' 'Hide layout components' 'Hide player flyout menu items' 'Hide player overlay buttons' 'Hide related video overlay' 'Hide timestamp' 'Hide video action buttons' 'Loop video' 'Miniplayer' 'Navigation bar' 'Open links externally' 'Open videos fullscreen' 'Playback speed' 'Remove background playback restrictions' 'Remove viewer discretion dialog' 'Return YouTube Dislike' 'Sanitize sharing links' 'Seekbar' 'SponsorBlock' 'Spoof app version' 'Spoof device dimensions' 'Swipe controls' 'Theme' 'Video ads' 'Video quality'"
+patcher-args = "-e 'Change package name' -OpackageName=com.google.android.youtube.morphe -e 'Change version code' -OversionCode=2147483647"
