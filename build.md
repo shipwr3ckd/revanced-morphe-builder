@@ -1,4 +1,3 @@
-Google-Photos: 7.67.0.882706237  
 ProtonMail: 4.15.0  
 Letterboxd: 3.4.1  
 
@@ -15,4 +14,4 @@ CLI: revanced/revanced-cli-6.0.0-dev.2-all.jar
 
 Skipped:  
 Patches: crimera/patches-3.0.0-dev.11.mpp  
-Patches: MorpheApp/patches-1.19.0-dev.3.mpp    
+Patches: MorpheApp/patches-1.19.0-dev.3.mpp      
