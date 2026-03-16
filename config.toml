@@ -6,6 +6,7 @@ cli-version = "dev"
 # ReVanced
 
 [Instagram]
+enabled = false
 app-name = "Instagram"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -19,7 +20,7 @@ included-patches = "'Disable Sentry telemetry' 'Disable analytics' 'Enable devel
 patcher-args = "-e 'Change package name' -OpackageName=com.revanced.instagram.android -e 'Change version code' -OversionCode=2147483647 -e 'Change link sharing domain' -OdomainName=kkinstagram.com"
 
 [Letterboxd]
-enabled = false
+enabled = true
 app-name = "Letterboxd"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -32,7 +33,7 @@ included-patches = "'Disable Sentry telemetry' 'Hide ads' 'Unlock app icons'"
 patcher-args = "-e 'Change version code' -OversionCode=2147483647"
 
 [Google-Photos]
-enabled = false
+enabled = true
 app-name = "Google Photos"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -45,7 +46,7 @@ included-patches = "'Disable Sentry telemetry' 'Enable DCIM folders backup contr
 patcher-args = "-e 'Change package name' -OpackageName=com.google.android.apps.photos.revanced -e 'Change version code' -OversionCode=2147483647"
 
 [ProtonMail]
-enabled = false
+enabled = true
 app-name = "Proton Mail"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -60,14 +61,14 @@ patcher-args = "-e 'Change package name' -OpackageName=ch.revanced.protonmail.an
 # Piko
 
 [Twitter]
-enabled = false
+enabled = true
 app-name = "X"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
 uptodown-dlurl = "https://twitter.en.uptodown.com/android/"
 build-mode = "apk"
-version = "11.71.0-release.0"
+version = "11.67.0-release.0"
 arch = "arm64-v8a"
 included-patches = "'Add ability to copy media link' 'Clear tracking params' 'Control video auto scroll' 'Custom download folder' 'Custom emoji font' 'Custom font' 'Custom sharing domain' 'Custom translator' 'Customise post font size' 'Customize Inline action Bar items' 'Customize Navigation Bar items' 'Customize default reply sorting' 'Customize explore tabs' 'Customize notification tabs' 'Customize profile tabs' 'Customize search suggestions' 'Customize search tab items' 'Customize side bar items' 'Customize timeline top bar' 'Disable auto timeline scroll on launch' 'Disable chirp font' 'Disunify xchat system' 'Download patch' 'Dynamic color' 'Enable Undo Posts' 'Enable force HD videos' 'Force enable translate' 'Handle custom twitter links' 'Hide Banner' 'Hide FAB' 'Hide FAB Menu Buttons' 'Hide Live Threads' 'Hide Recommended Users' 'Hide badges from navigation bar icons' 'Hide bookmark icon in timeline' 'Hide hidden replies' 'Hide immersive player' 'Hide nudge button' 'Hide promote button' 'Hide timeline posts by category' 'Hook feature flag' 'Native reader mode' 'No shortened URL' 'Remove Ads' 'Remove premium upsell' 'Remove view count' 'Round off numbers' 'Selectable Text' 'Share Tweet as Image' 'Show poll results' 'Show post source label'"
 patcher-args = "-e 'Change app icon' -OappIcon=original -e 'Change version code' -OversionCode=2147483647"
@@ -75,7 +76,7 @@ patcher-args = "-e 'Change app icon' -OappIcon=original -e 'Change version code'
 # Morphe
 
 [YouTube]
-enabled = false
+enabled = true
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
