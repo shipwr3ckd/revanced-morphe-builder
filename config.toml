@@ -20,7 +20,7 @@ included-patches = "'Disable Sentry telemetry' 'Disable analytics' 'Enable devel
 patcher-args = "-e 'Change package name' -OpackageName=com.revanced.instagram.android -e 'Change version code' -OversionCode=2147483647 -e 'Change link sharing domain' -OdomainName=kkinstagram.com"
 
 [Letterboxd]
-enabled = true
+enabled = false
 app-name = "Letterboxd"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -33,7 +33,7 @@ included-patches = "'Disable Sentry telemetry' 'Hide ads' 'Unlock app icons'"
 patcher-args = "-e 'Change version code' -OversionCode=2147483647"
 
 [Google-Photos]
-enabled = true
+enabled = false
 app-name = "Google Photos"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
@@ -46,7 +46,7 @@ included-patches = "'Disable Sentry telemetry' 'Enable DCIM folders backup contr
 patcher-args = "-e 'Change package name' -OpackageName=app.revanced.android.photos -e 'Change version code' -OversionCode=2147483647"
 
 [ProtonMail]
-enabled = true
+enabled = false
 app-name = "Proton Mail"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
