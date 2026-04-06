@@ -52,7 +52,7 @@ included-patches = "'Hide ads' 'Unlock app icons'"
 patcher-args = "-e 'Change package name' -OpackageName=com.morphe.letterboxd.letterboxd"
 
 [Google-Photos]
-enabled = true
+enabled = false
 app-name = "Google Photos"
 patches-source = "RookieEnough/De-ReVanced"
 cli-source = "MorpheApp/morphe-cli"
