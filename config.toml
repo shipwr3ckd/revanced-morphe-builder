@@ -1,6 +1,5 @@
 enable-module-update = false
 dpi = "nodpi 120-640dpi"
-rv-brand = "Morphe"
 
 [Instagram]
 enabled = true
@@ -10,13 +9,13 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# direct-dlurl = "https://github.com/shipwr3ckd/apks/releases/download/Release/com.instagram.android-420.0.0.0.10-20260315-005243.apk"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
+rv-brand = Piko
+direct-dlurl = "https://github.com/shipwr3ckd/apks/releases/download/Release/com.instagram.android_423.0.0.47.66.apk"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
 build-mode = "apk"
-version = "latest"
+version = "423.0.0.47.66"
 arch = "arm64-v8a"
-excluded-patches = "Disable stories"
 patcher-args = "-e 'Change version code' -OversionCode=2147483647"
 
 [Twitter]
@@ -27,8 +26,9 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
+rv-brand = Piko
 uptodown-dlurl = "https://twitter.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
 build-mode = "apk"
 version = "11.67.0-release.0"
 arch = "arm64-v8a"
@@ -43,8 +43,9 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
+rv-brand = De-ReVanced
 uptodown-dlurl = "https://letterboxd.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
 build-mode = "apk"
 version = "latest"
 arch = "arm64-v8a"
@@ -59,12 +60,12 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+rv-brand = De-ReVanced
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 build-mode = "apk"
 version = "auto"
 arch = "arm64-v8a"
-included-patches = "'Enable DCIM folders backup control' 'GmsCore support' 'Spoof features'"
 patcher-args = "-e 'Change package name' -OpackageName=app.morphe.android.photos"
 
 [ProtonMail]
@@ -75,12 +76,12 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
+rv-brand = De-ReVanced
 uptodown-dlurl = "https://protonmail.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
 build-mode = "apk"
 version = "auto"
 arch = "arm64-v8a"
-included-patches = "'Remove \"Sent from\" signature' 'Remove free accounts limit'"
 patcher-args = "-e 'Change package name' -OpackageName=ch.morphe.protonmail.android"
 
 [YouTube]
@@ -91,8 +92,10 @@ cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "dev"
 reset-prebuilts = true
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+rv-brand = Morphe
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 build-mode = "apk"
 version = "auto"
 arch = "arm64-v8a"
