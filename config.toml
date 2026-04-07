@@ -2,8 +2,19 @@ parallel-jobs = 1
 enable-module-update = false
 dpi = "nodpi 120-640dpi"
 
-[Instagram]
+[Tiktok]
 enabled = true
+app-name = "Tiktok"
+patches-source = "RookieEnough/De-ReVanced"
+cli-source = "MorpheApp/morphe-cli"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
+build-mode = "apk"
+version = "43.6.2"
+arch = "arm64-v8a"
+
+[Instagram]
+enabled = false
 app-name = "Instagram"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
@@ -20,7 +31,7 @@ arch = "arm64-v8a"
 patcher-args = "-e 'Change version code' -OversionCode=2147483647"
 
 [Twitter]
-enabled = true
+enabled = false
 app-name = "X"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
@@ -37,7 +48,7 @@ included-patches = "'Add ability to copy media link' 'Clear tracking params' 'Co
 patcher-args = "-e 'Change app icon' -OappIcon=original -e 'Change version code' -OversionCode=2147483647"
 
 [Letterboxd]
-enabled = true
+enabled = false
 app-name = "Letterboxd"
 patches-source = "RookieEnough/De-ReVanced"
 cli-source = "MorpheApp/morphe-cli"
@@ -54,7 +65,7 @@ included-patches = "'Hide ads' 'Unlock app icons'"
 patcher-args = "-e 'Change package name' -OpackageName=com.morphe.letterboxd.letterboxd"
 
 [Google-Photos]
-enabled = true
+enabled = false
 app-name = "Google Photos"
 patches-source = "RookieEnough/De-ReVanced"
 cli-source = "MorpheApp/morphe-cli"
@@ -70,7 +81,7 @@ arch = "arm64-v8a"
 patcher-args = "-e 'Change package name' -OpackageName=app.morphe.android.photos"
 
 [ProtonMail]
-enabled = true
+enabled = false
 app-name = "Proton Mail"
 patches-source = "RookieEnough/De-ReVanced"
 cli-source = "MorpheApp/morphe-cli"
@@ -86,7 +97,7 @@ arch = "arm64-v8a"
 patcher-args = "-e 'Change package name' -OpackageName=ch.morphe.protonmail.android"
 
 [YouTube]
-enabled = true
+enabled = false
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
