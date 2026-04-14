@@ -3,7 +3,7 @@ enable-module-update = false
 dpi = "nodpi 120-640dpi"
 
 [Tiktok]
-enabled = true
+enabled = false
 app-name = "Tiktok"
 patches-source = "RookieEnough/De-ReVanced"
 cli-source = "MorpheApp/morphe-cli"
@@ -100,7 +100,7 @@ arch = "arm64-v8a"
 patcher-args = "-e 'Change package name' -OpackageName=ch.morphe.protonmail.android"
 
 [YouTube]
-enabled = false
+enabled = true
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -112,7 +112,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android/"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 build-mode = "apk"
-version = "auto"
+version = "21.14.482"
 arch = "arm64-v8a"
 included-patches = "'Alternative thumbnails' 'Ambient mode' 'Bypass URL redirects' 'Bypass image region restrictions' 'Captions' 'Change start page' 'Check watch history domain name resolution' 'Copy video URL' 'Custom branding' 'Custom player overlay opacity' 'Disable DRC audio' 'Disable QUIC protocol' 'Disable double tap actions' 'Disable haptic feedback' 'Disable layout updates' 'Disable player popup panels' 'Disable resuming Shorts on startup' 'Disable sign in to TV popup' 'Disable video codecs' 'Double tap to seek' 'Downloads' 'Enable debugging' 'Exit fullscreen mode' 'Force original audio' 'GmsCore support' 'Hide Shorts components' 'Hide ads' 'Hide autoplay preview' 'Hide end screen cards' 'Hide end screen suggested video' 'Hide info cards' 'Hide layout components' 'Hide player flyout menu items' 'Hide player overlay buttons' 'Hide related video overlay' 'Hide timestamp' 'Hide video action buttons' 'Loop video' 'Miniplayer' 'Navigation bar' 'Open links externally' 'Open videos fullscreen' 'Playback speed' 'Remove background playback restrictions' 'Remove viewer discretion dialog' 'Return YouTube Dislike' 'Sanitize sharing links' 'Seekbar' 'SponsorBlock' 'Spoof app version' 'Spoof device dimensions' 'Swipe controls' 'Theme' 'Video ads' 'Video quality'"
 patcher-args = "-e 'Change package name' -OpackageName=app.revanced.android.youtube -e 'Change version code' -OversionCode=2147483647"
